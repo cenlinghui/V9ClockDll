@@ -1,0 +1,26 @@
+HKCR
+{
+	Xieka.xie.1 = s 'xie Class'
+	{
+		CLSID = s '{88075281-6634-4FB4-9C71-6EDBE797EEA9}'
+	}
+	Xieka.xie = s 'xie Class'
+	{
+		CLSID = s '{88075281-6634-4FB4-9C71-6EDBE797EEA9}'
+		CurVer = s 'Xieka.xie.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {88075281-6634-4FB4-9C71-6EDBE797EEA9} = s 'xie Class'
+		{
+			ProgID = s 'Xieka.xie.1'
+			VersionIndependentProgID = s 'Xieka.xie'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{4B52D267-CC1C-445B-A5C1-F76105824685}'
+		}
+	}
+}

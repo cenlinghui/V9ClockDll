@@ -1,0 +1,166 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: xieka - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\小鬼\AppData\Local\Temp\RSP4A51.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /Fp"Debug/xieka.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Projects\xieka\xie.cpp"
+]
+Creating command line "cl.exe @"C:\Users\小鬼\AppData\Local\Temp\RSP4A51.tmp"" 
+Creating temporary file "C:\Users\小鬼\AppData\Local\Temp\RSP4A52.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/xieka.pdb" /debug /machine:I386 /def:".\xieka.def" /out:"Debug/xieka.dll" /implib:"Debug/xieka.lib" /pdbtype:sept /libpath:"json_vc71_libmtd.lib" 
+.\Debug\StdAfx.obj
+.\Debug\xie.obj
+.\Debug\xieka.obj
+.\Debug\xieka.res
+]
+Creating command line "link.exe @"C:\Users\小鬼\AppData\Local\Temp\RSP4A52.tmp""
+Creating temporary file "C:\Users\小鬼\AppData\Local\Temp\RSP4A53.bat" with contents
+[
+@echo off
+regsvr32 /s /c ".\Debug\xieka.dll"
+echo regsvr32 exec. time > ".\Debug\regsvr32.trg"
+]
+Creating command line ""C:\Users\小鬼\AppData\Local\Temp\RSP4A53.bat""
+Compiling...
+xie.cpp
+d:\microsoft visual studio\vc98\include\istream(547) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+d:\microsoft visual studio\vc98\include\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        d:\microsoft visual studio\vc98\include\ostream(229) : while compiling class-template member function 'class std::basic_ostream<char,struct std::char_traits<char> > &__thiscall std::basic_ostream<char,struct std::char_traits<char> >::put(char)'
+d:\microsoft visual studio\vc98\include\ostream(234) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        d:\microsoft visual studio\vc98\include\ostream(229) : while compiling class-template member function 'class std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> > &__thiscall std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> >::put(unsigned short)'
+d:\microsoft visual studio\vc98\include\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        d:\microsoft visual studio\vc98\include\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<char,struct std::char_traits<char> >::ipfx(bool)'
+d:\microsoft visual studio\vc98\include\istream(46) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        d:\microsoft visual studio\vc98\include\istream(41) : while compiling class-template member function 'bool __thiscall std::basic_istream<unsigned short,struct std::char_traits<unsigned short> >::ipfx(bool)'
+d:\microsoft visual studio\vc98\include\xstring(525) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify -GX
+        d:\microsoft visual studio\vc98\include\xstring(521) : while compiling class-template member function 'void __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::_Copy(unsigned int)'
+Linking...
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2005: "public: void __thiscall std::ios_base::clear(int,bool)" (?clear@ios_base@std@@QAEXH_N@Z) already defined in libcpmtd.lib(ios.obj)
+json_vc71_libmtd.lib(json_value.obj) : warning LNK4078: multiple ".CRT" sections found with different attributes (40300040)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2005: "public: virtual __thiscall std::ios_base::~ios_base(void)" (??1ios_base@std@@UAE@XZ) already defined in libcpmtd.lib(ios.obj)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2005: "public: void __thiscall std::ios_base::clear(int,bool)" (?clear@ios_base@std@@QAEXH_N@Z) already defined in libcpmtd.lib(ios.obj)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2005: "protected: void __thiscall std::ios_base::_Init(void)" (?_Init@ios_base@std@@IAEXXZ) already defined in libcpmtd.lib(ios.obj)
+libcpmtd.lib(locale.obj) : error LNK2005: "public: __thiscall std::_Locinfo::~_Locinfo(void)" (??1_Locinfo@std@@QAE@XZ) already defined in json_vc71_libmtd.lib(json_reader.obj)
+libcpmtd.lib(locale.obj) : error LNK2005: "public: static class std::locale::id std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::id" (?id@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@2V0locale@2@A) already defined in json_vc71_libmtd.lib(json_writer.obj)
+libcpmtd.lib(locale.obj) : error LNK2005: "public: static class std::locale::id std::numpunct<char>::id" (?id@?$numpunct@D@std@@2V0locale@2@A) already defined in json_vc71_libmtd.lib(json_writer.obj)
+json_vc71_libmtd.lib(json_reader.obj) : warning LNK4006: "public: void __thiscall std::ios_base::clear(int,bool)" (?clear@ios_base@std@@QAEXH_N@Z) already defined in libcpmtd.lib(ios.obj); second definition ignored
+json_vc71_libmtd.lib(json_value.obj) : warning LNK4078: multiple ".CRT" sections found with different attributes (40300040)
+json_vc71_libmtd.lib(json_writer.obj) : warning LNK4006: "public: virtual __thiscall std::ios_base::~ios_base(void)" (??1ios_base@std@@UAE@XZ) already defined in libcpmtd.lib(ios.obj); second definition ignored
+json_vc71_libmtd.lib(json_writer.obj) : warning LNK4006: "public: void __thiscall std::ios_base::clear(int,bool)" (?clear@ios_base@std@@QAEXH_N@Z) already defined in libcpmtd.lib(ios.obj); second definition ignored
+json_vc71_libmtd.lib(json_writer.obj) : warning LNK4006: "protected: void __thiscall std::ios_base::_Init(void)" (?_Init@ios_base@std@@IAEXXZ) already defined in libcpmtd.lib(ios.obj); second definition ignored
+libcpmtd.lib(locale.obj) : warning LNK4006: "public: __thiscall std::_Locinfo::~_Locinfo(void)" (??1_Locinfo@std@@QAE@XZ) already defined in json_vc71_libmtd.lib(json_reader.obj); second definition ignored
+libcpmtd.lib(locale.obj) : warning LNK4006: "public: static class std::locale::id std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::id" (?id@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@2V0locale@2@A) already defined in json_vc71_libmtd.lib(json_writer.obj); second definition ignored
+libcpmtd.lib(locale.obj) : warning LNK4006: "public: static class std::locale::id std::numpunct<char>::id" (?id@?$numpunct@D@std@@2V0locale@2@A) already defined in json_vc71_libmtd.lib(json_writer.obj); second definition ignored
+   Creating library Debug/xieka.lib and object Debug/xieka.exp
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol __RTC_Shutdown
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol __RTC_Shutdown
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol __RTC_Shutdown
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol __RTC_InitBase
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol __RTC_InitBase
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol __RTC_InitBase
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol __RTC_CheckEsp
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol __RTC_CheckEsp
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol __RTC_CheckEsp
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol @_RTC_CheckStackVars@8
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol ___security_cookie
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol ___security_cookie
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol ___security_cookie
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol ___CxxFrameHandler3
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol @__security_check_cookie@4
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol __wassert
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol __wassert
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol __wassert
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol "public: __thiscall std::_Lockit::_Lockit(int)" (??0_Lockit@std@@QAE@H@Z)
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol "public: __thiscall std::_Lockit::_Lockit(int)" (??0_Lockit@std@@QAE@H@Z)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "public: __thiscall std::_Lockit::_Lockit(int)" (??0_Lockit@std@@QAE@H@Z)
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol "void __cdecl std::_Debug_message(wchar_t const *,wchar_t const *,unsigned int)" (?_Debug_message@std@@YAXPB_W0I@Z)
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol "void __cdecl std::_Debug_message(wchar_t const *,wchar_t const *,unsigned int)" (?_Debug_message@std@@YAXPB_W0I@Z)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "void __cdecl std::_Debug_message(wchar_t const *,wchar_t const *,unsigned int)" (?_Debug_message@std@@YAXPB_W0I@Z)
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z)
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ)
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ)
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(void)" (??0exception@std@@QAE@XZ)
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(void)" (??0exception@std@@QAE@XZ)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(void)" (??0exception@std@@QAE@XZ)
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol __invalid_parameter
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol __invalid_parameter
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol __invalid_parameter
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol __CrtDbgReportW
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol __CrtDbgReportW
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol __CrtDbgReportW
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol "void * __cdecl operator new[](unsigned int,struct std::_DebugHeapTag_t const &,char *,int)" (??_U@YAPAXIABU_DebugHeapTag_t@std@@PADH@Z)
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol "void * __cdecl operator new[](unsigned int,struct std::_DebugHeapTag_t const &,char *,int)" (??_U@YAPAXIABU_DebugHeapTag_t@std@@PADH@Z)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "void * __cdecl operator new[](unsigned int,struct std::_DebugHeapTag_t const &,char *,int)" (??_U@YAPAXIABU_DebugHeapTag_t@std@@PADH@Z)
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol "struct std::_DebugHeapTag_t const & __cdecl std::_DebugHeapTag_func(void)" (?_DebugHeapTag_func@std@@YAABU_DebugHeapTag_t@1@XZ)
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol "struct std::_DebugHeapTag_t const & __cdecl std::_DebugHeapTag_func(void)" (?_DebugHeapTag_func@std@@YAABU_DebugHeapTag_t@1@XZ)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "struct std::_DebugHeapTag_t const & __cdecl std::_DebugHeapTag_func(void)" (?_DebugHeapTag_func@std@@YAABU_DebugHeapTag_t@1@XZ)
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z)
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z)
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ)
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ)
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xlen(void)" (?_Xlen@_String_base@std@@SAXXZ)
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_String_base::_Xran(void)" (?_Xran@_String_base@std@@SAXXZ)
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol "public: void __thiscall std::_Mutex::_Unlock(void)" (?_Unlock@_Mutex@std@@QAEXXZ)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "public: void __thiscall std::_Mutex::_Unlock(void)" (?_Unlock@_Mutex@std@@QAEXXZ)
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol "public: void __thiscall std::_Mutex::_Lock(void)" (?_Lock@_Mutex@std@@QAEXXZ)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "public: void __thiscall std::_Mutex::_Lock(void)" (?_Lock@_Mutex@std@@QAEXXZ)
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol "private: static void __cdecl std::locale::facet::facet_Register(class std::locale::facet *)" (?facet_Register@facet@locale@std@@CAXPAV123@@Z)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "private: static void __cdecl std::locale::facet::facet_Register(class std::locale::facet *)" (?facet_Register@facet@locale@std@@CAXPAV123@@Z)
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol "private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)" (?_Getgloballocale@locale@std@@CAPAV_Locimp@12@XZ)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)" (?_Getgloballocale@locale@std@@CAPAV_Locimp@12@XZ)
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_ctor(class std::_Locinfo *,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@@Z)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_ctor(class std::_Locinfo *,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@@Z)
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_dtor(class std::_Locinfo *)" (?_Locinfo_dtor@_Locinfo@std@@SAXPAV12@@Z)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::_Locinfo::_Locinfo_dtor(class std::_Locinfo *)" (?_Locinfo_dtor@_Locinfo@std@@SAXPAV12@@Z)
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol "void * __cdecl operator new(unsigned int,struct std::_DebugHeapTag_t const &,char *,int)" (??2@YAPAXIABU_DebugHeapTag_t@std@@PADH@Z)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "void * __cdecl operator new(unsigned int,struct std::_DebugHeapTag_t const &,char *,int)" (??2@YAPAXIABU_DebugHeapTag_t@std@@PADH@Z)
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol _memcpy_s
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol _memcpy_s
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol _memcpy_s
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol "void __cdecl operator delete[](void *)" (??_V@YAXPAX@Z)
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol "void __cdecl operator delete[](void *)" (??_V@YAXPAX@Z)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "void __cdecl operator delete[](void *)" (??_V@YAXPAX@Z)
+json_vc71_libmtd.lib(json_reader.obj) : error LNK2001: unresolved external symbol _memmove_s
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol _memmove_s
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol _memmove_s
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol "void * __cdecl operator new[](unsigned int)" (??_U@YAPAXI@Z)
+json_vc71_libmtd.lib(json_value.obj) : error LNK2001: unresolved external symbol __ftol2_sse
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol _sprintf_s
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "private: static void __cdecl std::ios_base::_Ios_base_dtor(class std::ios_base *)" (?_Ios_base_dtor@ios_base@std@@CAXPAV12@@Z)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "public: __thiscall std::_Mutex::~_Mutex(void)" (??1_Mutex@std@@QAE@XZ)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "long const std::_BADOFF" (?_BADOFF@std@@3JB)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "public: static void __cdecl std::ios_base::_Addstd(class std::ios_base *)" (?_Addstd@ios_base@std@@SAXPAV12@@Z)
+json_vc71_libmtd.lib(json_writer.obj) : error LNK2001: unresolved external symbol "public: __thiscall std::_Mutex::_Mutex(void)" (??0_Mutex@std@@QAE@XZ)
+Debug/xieka.dll : fatal error LNK1120: 39 unresolved externals
+Error executing link.exe.
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+xieka.dll - 102 error(s), 15 warning(s)
+</pre>
+</body>
+</html>

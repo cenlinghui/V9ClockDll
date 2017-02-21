@@ -1,0 +1,40 @@
+// xieka.idl : IDL source for xieka.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (xieka.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(1613A565-7F23-4FE9-A564-93D7DA3AB82B),
+		dual,
+		helpstring("Ixie Interface"),
+		pointer_default(unique)
+	]
+	interface Ixie : IDispatch
+	{
+		[propget, id(1), helpstring("property GetResult")] HRESULT GetResult([out, retval] BSTR *pVal);
+		[id(2), helpstring("method writeCard")] HRESULT writeCard(BSTR bstr1);
+	};
+
+[
+	uuid(4B52D267-CC1C-445B-A5C1-F76105824685),
+	version(1.0),
+	helpstring("xieka 1.0 Type Library")
+]
+library XIEKALib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(88075281-6634-4FB4-9C71-6EDBE797EEA9),
+		helpstring("xie Class")
+	]
+	coclass xie
+	{
+		[default] interface Ixie;
+	};
+};
